@@ -1,0 +1,76 @@
+@import "../bootstrap-4.2.1/scss/functions";
+@import "./custom/variables";
+@import "../bootstrap-4.2.1/scss/bootstrap.scss";
+
+.main-image-cover{
+    height: 496px;
+    background:url('../image/main-header.jpeg');
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.rectangle-section{
+    margin-top: -90px;
+}
+.rectangle-image-wrap{
+    height: 256px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: #fff;
+    writing-mode: vertical-lr;
+    text-decoration: none;
+    overflow: hidden;
+    
+}
+.rectangle-image-wrap + .rectangle-image-wrap {
+    border-left: 1px solid white;
+}
+.rectangle-image-wrap.active .rectangle-image{
+    filter: blur(0);
+}
+.rectangle-image-wrap.active .rectangle-over,
+.rectangle-image-wrap:hover .rectangle-over,
+.rectangle-image-wrap:hover .rectangle-image{
+    background-color: rgba(255, 225, 128, 0.8);
+    filter: blur(0);
+}
+a.rectangle-image-wrap:hover{
+    text-decoration: none;
+}
+.rectangle-image-wrap.active,.rectangle-image-wrap:hover,.rectangle-image-wrap:focus {
+    color: #3F5D45;
+    font-weight: bolder;
+}
+.rectangle-over {
+    background-color: rgba(63, 93, 69, 0.8);
+    transition: background-color .5s;
+   
+}
+.four-side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.zindex--1{
+    z-index: -1;
+}
+.rectangle-text {
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+.rectangle-image {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    transition: filter .5s;
+    filter: blur(5px);
+}
