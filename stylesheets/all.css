@@ -11761,6 +11761,10 @@ a.text-accent:hover, a.text-accent:focus {
   background: url("../image/main-header.jpeg");
 }
 
+.h-100 {
+  height: 100% !important;
+}
+
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -11853,5 +11857,37 @@ a.rectangle-image-wrap:hover {
   transition: filter .5s, -webkit-filter .5s;
   -webkit-filter: blur(5px);
           filter: blur(5px);
+}
+
+.bg-primary-lighter {
+  background-color: #EAF0ED;
+}
+
+.section-image {
+  min-height: 250px;
+}
+
+.vertical-content {
+  max-height: 420px;
+  line-height: 2;
+}
+
+.text-primary-light {
+  color: #8DA291 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .writing-md-vertical {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+  }
+  .break-vertical-block {
+    margin-top: -24px;
+    margin-bottom: -24px;
+  }
+  .vertical-content {
+    line-height: 2.5;
+  }
 }
 /*# sourceMappingURL=all.css.map */
