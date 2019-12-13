@@ -2,6 +2,9 @@
 @import "./custom/variables";
 @import "../bootstrap-4.2.1/scss/bootstrap.scss";
 
+body{
+    color: #3F5D45;
+}
 .main-image-cover{
     height: 496px;
     background:url('../image/main-header.jpeg');
@@ -12,6 +15,9 @@
 .bg-cover{
     background-size: cover;
     background-position: center center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(63, 93, 69, 0.5);
 }
 .rectangle-section{
     margin-top: -90px;
@@ -105,4 +111,78 @@ a.rectangle-image-wrap:hover{
     .vertical-content {
         line-height: 2.5;
     }
+}
+// item card
+.item-card{
+    display: flex;
+    flex-direction: column;
+}
+// item-image
+.item-card .item-image{
+    height: 315px;
+    position: relative;
+}
+.item-card .item-tag{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    background-color: #3F5D45;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    padding: 15px 10px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+// item-icon
+.item-card .item-icon{
+    position:absolute;
+    top: 20px;
+    right: 22px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.ui-checked-display{
+    cursor: pointer;
+}
+.ui-checked-display .ui-show,.ui-checked-display .ui-checkbox{
+    display: none;
+}
+.ui-checked-display .ui-checkbox:checked ~ .ui-show {
+    display: block;
+}
+.ui-checked-display .ui-checkbox:checked ~ .ui-hidden {
+    display: none;
+}
+// item-body textContent btn
+.item-card .item-name {
+    border-right: 1px solid #EAF0ED;
+}
+.item-card .item-body{
+    border:  1px solid #EAF0ED;
+}
+.item-card .item-name, 
+.item-card .item-price {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.25rem; // 20px
+}
+.btn-primary-lighter {
+    color: #3F5D45;
+    background-color: #EAF0ED;
+    border-color: #EAF0ED;
+    font-weight: 900;
+}
+.btn-primary-lighter:hover {
+    color: #3F5D45;
+    background-color: #d4e0da;
+    border-color: #ccdbd4;
+}
+.btn-lg, .btn-group-lg > .btn {
+    padding: 1rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0;
 }
