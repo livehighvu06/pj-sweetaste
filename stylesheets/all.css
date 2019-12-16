@@ -12031,4 +12031,10 @@ label {
   background-color: #EAF0ED;
   color: #3F5D45;
 }
+
+.btn-brand-light {
+  color: #212529;
+  background-color: #fff;
+  border-color: #EAF0ED;
+}
 /*# sourceMappingURL=all.css.map */
