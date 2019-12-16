@@ -16,9 +16,10 @@ body{
     background-size: cover;
     background-position: center center;
 }
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(63, 93, 69, 0.5);
+.bg-primary-lighter{
+    background-color: #EAF0ED;
 }
+
 .rectangle-section{
     margin-top: -90px;
 }
@@ -85,9 +86,7 @@ a.rectangle-image-wrap:hover{
 }
 
 //section
-.bg-primary-lighter{
-    background-color: #EAF0ED;
-}
+
 .section-image{
     min-height: 250px;
 }
@@ -185,4 +184,49 @@ label {
     font-size: 1.25rem;
     line-height: 1.5;
     border-radius: 0;
+}
+// 訂閱-郵件
+.form-square {
+    background-color: #EAF0ED;
+}
+.form-square.form-square-withicon {
+    padding-left: 64px;
+    position: relative;
+}
+.form-square .form-square-icon-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.form-square .form-input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+// footer
+.list-unstyled{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+//產品列表
+//header
+.header{
+    position: relative;
+}
+.header .header-main-image {
+    height: 496px;
+}
+.header .header-image-context {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+//list-group-item
+.list-group-item:hover{
+    background-color: #EAF0ED;
+    color: #3F5D45;
 }
