@@ -91,7 +91,8 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
-
+$primary-200: #EAF0ED;
+$primary-500: #8DA291;
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      8% !default;
 

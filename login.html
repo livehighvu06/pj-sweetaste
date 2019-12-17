@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>產品列表</title>
+  <title>註冊</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   <link rel="stylesheet" href="./stylesheets/all.css">
   
 </head>
 <body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container">
       <button class="navbar-toggler d-md-none d-flex align-items-center collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +33,7 @@
           <a class="nav-link" href="./index.html">首頁</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">甜點</a>
+          <a class="nav-link" href="./product.html">甜點</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">登入</a>
@@ -41,9 +42,13 @@
     </div>
   </div>
   </nav>
+  <!-- login -->
   <section class="container px-0 px-md-3 my-md-6">
-      <div class="row justify-content-center">
+      <div class="row no-gutters justify-content-center">
           <div class="col-md-10">
+              <div class="bg-primary d-md-none p-5">
+                <h1 class="text-center text-white my-2">會員登入</h1>
+              </div>
               <div class="row no-gutters flex-md-row-reverse">
                 <div class="col-md-6 py-md-3">
                     <div class="bg-primary-lighter p-5">
@@ -56,12 +61,12 @@
                             </div>
                             <div class="col-4 col-md-12 mb-md-4">
                                 <button class="btn btn-block btn-lg btn-brand-light py-3">
-                                    <img src="./image/ic-facebook-logotype.svg" class="img-fluid" width="108" alt="">
+                                    <img src="./image/ic-google.svg" class="img-fluid" width="108" alt="">
                                 </button>
                             </div>
                             <div class="col-4 col-md-12 mb-md-4">
                                 <button class="btn btn-block btn-lg btn-brand-light py-3">
-                                    <img src="./image/ic-facebook-logotype.svg" class="img-fluid" width="108" alt="">
+                                    <img src="./image/ic-yahoo.svg" class="img-fluid" width="108" alt="">
                                 </button>
                             </div>
                         </div>
@@ -80,6 +85,10 @@
                             <label for="password" class="material-icons form-square-icon-left">vpn_key</label>
                             <input type="password" id="password" class="form-input w-100" placeholder="請輸入使用者密碼">
                         </div>
+                        <div class="custom-control custom-checkbox mb-0">
+                          <input type="checkbox" class="custom-control-input" id="rememberme">
+                          <label for="rememberme" class="custom-control-label text-white">記住我</label>
+                        </div>
                     </div>
                     <button class="btn btn-block btn-accent btn-lg text-primary">登入帳號</button>
                 </div>
@@ -87,6 +96,7 @@
           </div>
       </div>
   </section>
+  <!-- mail -->
   <section class="py-5 bg-primary">
     <div class="container">
       <div class="row justify-content-center">
@@ -106,6 +116,7 @@
       </div>
     </div>
   </section>
+  <!-- footer -->
   <footer class="py-4 bg-primary-lighter">
     <div class="container">
       <div class="row justify-content-center">
