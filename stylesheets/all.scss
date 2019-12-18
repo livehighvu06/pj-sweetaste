@@ -19,8 +19,20 @@ body{
 }
 .bg-primary-lighter{
     background-color: #EAF0ED;
-}
 
+}
+.bg-primary-lighter {
+    background-color: $primary-200;
+  }
+  .text-primary-light {
+    color: $primary-500 !important;
+  }
+  .text-primary-lighter {
+    color: $primary-200 !important;
+  }
+  .border-primary-lighter {
+    border-color: $primary-200;
+  }
 .rectangle-section{
     margin-top: -90px;
 }
@@ -289,5 +301,9 @@ label {
         color: #3F5D45;
     } 
 }
+// checkout
 
+.form-control.form-control-lg {
+    -webkit-appearance: none;
+}
 

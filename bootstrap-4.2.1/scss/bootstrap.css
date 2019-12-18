@@ -5747,6 +5747,89 @@ a.badge-dark:hover, a.badge-dark:focus {
           animation: progress-bar-stripes 1s linear infinite;
 }
 
+.process-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.process-steps .step-circle {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #8DA291;
+  border-radius: 20px;
+  position: relative;
+  background-color: #3F5D45;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.process-steps:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #8DA291;
+}
+
+.process-steps .step-circle.active {
+  border-color: #EAF0ED;
+}
+
+.process-steps .step-circle.active:after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  display: block;
+  background-color: #EAF0ED;
+  border-radius: 20px;
+}
+
+.process-steps .step-circle.completed {
+  font-size: 1rem;
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.process-steps.process-steps-dark {
+  border-color: #3F5D45;
+}
+
+.process-steps.process-steps-dark:after {
+  background-color: #3F5D45;
+}
+
+.process-steps.process-steps-dark .step-circle {
+  border-color: #3F5D45;
+}
+
+.process-steps.process-steps-dark .step-circle.active {
+  border-color: #3F5D45;
+}
+
+.process-steps.process-steps-dark .step-circle.active:after {
+  background-color: #3F5D45;
+}
+
+.process-steps.process-steps-dark .step-circle.completed {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
