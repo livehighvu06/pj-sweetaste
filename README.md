@@ -1,5 +1,5 @@
-# pj-sweetaste
+# 甜點電商
 
-Bootstrap / SCSS
+# Bootstrap / SCSS
 
 https://livehighvu06.github.io/pj-sweetaste/
