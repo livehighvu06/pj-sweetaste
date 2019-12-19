@@ -45,67 +45,64 @@
   <!-- checkout -->
   <div class="container my-md-6">
      <div class="row">
-         <div class="col-lg-10 px-0 px-md-2 mx-auto">
+         <div class="col-lg-10 mx-auto">
              <div class="row">
-                 <div class="col-lg-8">
+                 <div class="col-lg-8 px-0 px-lg-2">
                      <div class="p-5 bg-primary text-primary-lighter">
                          <div class="form-row mb-5">
                              <div class="col-6">
-                                 <h1 class="text-primary-lighter">運送</h1>
+                                 <h1 class="text-primary-lighter">付款</h1>
                              </div>
                              <div class="col-6 d-flex align-items-center">
                                 <div class="process-steps w-100">
+                                    <div class="step-circle material-icons completed">done</div>
                                     <div class="step-circle material-icons active"></div>
-                                    <div class="step-circle material-icons"></div>
                                     <div class="step-circle material-icons"></div>
                                   </div>
                              </div>
                          </div>
+                        <div class="form-group">
+                          <label for="credit" class="h4">信用卡卡號</label>
+                          <div class="input-group input-group-lg">
+                            <input type="text" id="credit" class="form-control bg-primary-lighter border-right-0" placeholder="0000-1111-2222-3333">
+                            <div class="input-group-append">
+                               <span class="input-group-text bg-primary-lighter text-primary material-icons">credit_card</span>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="form-group">
+                            <label for="phonenumber" class="h4">持卡人姓名</label>
+                            <div class="form-row">
+                              <div class="col-6">
+                                <input type="text" id="phonenumber" class="form-control form-control-lg bg-primary-lighter" placeholder="金城">
+                              </div>
+                              <div class="col-6">
+                                <input type="text" id="phonenumber" class="form-control form-control-lg bg-primary-lighter" placeholder="武">
+                              </div>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                          <label for="phonenumber" class="h4">有效期限</label>
+                          <div class="form-row">
+                            <div class="col-6">
+                              <input type="text" id="phonenumber" class="form-control form-control-lg bg-primary-lighter" placeholder="月">
+                            </div>
+                            <div class="col-6">
+                              <input type="text" id="phonenumber" class="form-control form-control-lg bg-primary-lighter" placeholder="年">
+                            </div>
+                          </div>
+                       </div>
+                       <div class="form-group">
+                         <label for="" class="h4">背面末三碼</label>
                          <div class="form-row">
-                             <div class="col-6">
-                                 <div class="form-group">
-                                     <label for="lastname" class="h4">姓氏</label>
-                                     <input type="text" id="lastname" class="form-control form-control-lg bg-primary-lighter" placeholder="金城">
-                                 </div>
-                             </div>
-                             <div class="col-6">
-                                 <div class="form-group">
-                                     <label for="username" class="h4">名字</label>
-                                     <input type="text" id="username" class="form-control form-control-lg bg-primary-lighter" placeholder="武">
-                                 </div>
-                             </div>
+                           <div class="col-6">
+                             <input type="text" id="" class="form-control form-control-lg bg-primary-lighter" placeholder="123">
+                           </div>
                          </div>
-                         <div class="form-group">
-                            <label for="phonenumber" class="h4">電話</label>
-                            <input type="text" id="phonenumber" class="form-control form-control-lg bg-primary-lighter" placeholder="香港 334-5678">
-                         </div>
-                         <div class="form-group">
-                            <label for="address" class="h4">地址</label>
-                            <div class="form-row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <select id="planet" class="form-control form-control-lg bg-primary-lighter">
-                                            <option value="納美克星">納美克星</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <select id="area" class="form-control form-control-lg bg-primary-lighter">
-                                            <option value="比克區">比克區</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12">
-                                  <input type="text" id="adddress" class="form-control form-control-lg bg-primary-lighter" placeholder="座標2344332">
-                                </div>
-                            </div>
-                         </div>
+                       </div>
                      </div>
                      <button class="btn-block border-0 bg-accent mx-md-0">
-                        <a href="#" class="btn btn-block btn-lg text-primary py-3 text-center">下一步</a>
+                        <a href="./checkout-3.html" class="btn btn-block btn-lg text-primary py-3 text-center">下一步</a>
                       </button>
                  </div>
                  <div class="col-lg-4 d-none d-lg-block">
